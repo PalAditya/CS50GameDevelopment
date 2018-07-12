@@ -407,7 +407,7 @@ function displayFPS()
     -- simple FPS display across all states
     love.graphics.setFont(smallFont)
     love.graphics.setColor(0, 255, 0, 255)
-    love.graphics.print('pos: ' .. tostring(pos, 10, 10))
+    love.graphics.print('pos: ' .. tostring(love.timer.getFPS(), 10, 10))
 	--[[love.graphics.printf(player2.y, 0, 30, VIRTUAL_WIDTH, 'center')
 	love.graphics.printf(k, 0, 40, VIRTUAL_WIDTH, 'center')
 	love.graphics.printf(ball.y, 0, 50, VIRTUAL_WIDTH, 'center')
